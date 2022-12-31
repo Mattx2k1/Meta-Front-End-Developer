@@ -1,0 +1,162 @@
+﻿Meta Elevate - Meta Front End Developer
+
+
+1. DOM
+   1. Document Object Model
+   2. Tree structure of the objects
+   3. The DOM has a series of objects, each representing a single HTML element
+   4. At the root of the DOM is the HTML object
+   5. HTML object contains the head and body objects
+   6. Head object houses the title object which holds the text object
+   7. The body object houses the DIV objects which then can contain header, paragraph, and text objects such as ‘<div>’, ‘<h1>’, ‘<p>’, and ‘text’.
+   8. The Document Object Model allows you to update all HTML elements on a web page. 
+   9. Many JavaScript libraries and frameworks rely on the DOM, one of these libraries is the react library. 
+2. Webpages
+   1. Typically have hundreds of elements
+3. Common DOM and Javascript uses:
+   1. Updating the elements on an HTML page based on interaction from the user
+      1. Notification for incorrect password
+      2. Notification for message received
+      3. Interaction with a video player
+4. Accessibility 
+   1. In this course we will learn the proper way to use the DOM and HTML elements so that the content is accessible to everyone
+   2. Having text that is not contained within proper tags like paragraph or heading tags makes it harder for assistive technologies to interact with the content.
+5. Extra resources
+   1. HTML Elements Reference (Mozilla)
+      1. https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+   2. The Form Element (Mozilla)
+      1. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
+   3. What is the Document Object Model? (W3C)
+      1. https://www.w3.org/TR/WD-DOM/introduction.html
+   4. ARIA in HTML (W3C via Github)
+      1. https://w3c.github.io/html-aria/
+   5. ARIA Authoring Practices  (W3C)
+      1. https://www.w3.org/TR/wai-aria-practices-1.2/
+6. Selecting and Styling
+   1. The HTML is the frame and stricture of the building 
+   2. CSS is the paint, wallpaper, fixtures, artwork, and overall style or look and feel. In other words, CSS tells the web browser how to display HTML elements on the screen.
+   3. CSS rule
+      1. A declaration block starts with a left curly brace and ends with a right matching curly bracket
+      2. In between the curly brackets are the style declarations
+      3. The first element of the CSS rule is he selector
+         1. This indicates the CSS element or elements we want to style.
+      4. Example
+         1. H1 {
+        Color: green;
+}
+   1. H1 is the selector
+   2. Color is the property
+   3. Green is the value
+   5. ID selector
+   6. “What if I only want to style one particular type of element on a web page; ie. not all h1 elements but just one h1 element - id selector
+   1. In HTML document, Add an ‘id’ to the html tag - <h1 id=”header1”>
+   2. In CSS document, reference id with # like #header1
+   1. Example
+   1. #header1 {
+        Color: green
+}
+      7. Class selector
+      1. Good for selecting multiple elements of the same class without selecting all elements
+      2. Tighter scope of element selection than root element. 
+      3. Looser scope of element selector than ID.
+      4. Hierarchy should be
+      1. Root element
+      2. Class(es) of similar elements
+      3. IDs for very specific elements
+      5. IDs and classes can be used interchangeably I believe but should not be
+      6. Element with class selector:
+      1. HTML - <p class=”introduction”>
+      2. CSS:
+      1. P.introduction {
+        Margin:2px;
+}
+         7. Descendant selectors
+         1. Descendant selectors are useful if you need to select HTML elements that are contained within another selector.
+         1. Example:
+         1. HTML:
+<div id="blog">
+<h1>Latest News</h1>
+<div>
+         2. CSS:
+#blog h1 {
+        color: blue;
+}
+            2. The CSS rule will select all h1 elements that are contained within the element with the ID blog. The CSS rule will not apply to the h1 element containing the text Archives.
+            8. Child Selectors
+            7. Text and Color
+            1. RGB
+            1. A color model that creates colors by adding varying degrees of red, green, and blue together
+            2. This is how the human eye sees color
+            2. RGBA
+            1. An extension of the RGB color model which adds the alpha channel. The alpha channel adds opacity or transparency of the color
+            3. HSL
+            1. A newer color model that is defined as hue, saturation, and lightness.
+            8. Box Model
+            1. Hiearchy
+            1. Margin
+            2. Border
+            3. Padding
+            4. Content
+            2. Document Flow
+            1. Block vs inline elements
+            1. Block take up the full width of the screen and the height of the content
+            2. Inline take up as much width and height of the content and can be on the same line, hence the name inline
+            3. Additional CSS resources
+            1. CSS Reference (Mozilla)
+            2. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+            3. HTML and CSS: Design and build websites by Jon Duckett
+            4. https://www.amazon.com/HTML-CSS-Design-Build-Websites/dp/1118008189/
+            5. CSS Definitive Guide  by Eric Meyer 
+            6. https://www.amazon.com/CSS-Definitive-Guide-Visual-Presentation/dp/1449393195/
+            9. Working with libraries
+            1. Libraries and frameworks are called dependencies 
+            1. Components can have multiple dependencies. A dependency can have a dependency of its own. This is called a dependency tree. Large projects can have 100s of dependencies in its tree
+            2. Dependency relying on other frameworks and libraries = dependency 
+            3. Package manager takes care of downloading all needed dependencies 
+            4. NPM is the most common package manager for Front End Development
+            5. Node Package Manager = NPM
+            6. You will use a bundling tool to gather all your dependencies and combine them so that they can be referenced from your HTML file.  
+            2. A web page and its components need the dependencies to be uploaded/present on the web server in order to render on the internet
+            10. Introduction to responsive design
+            1. 3 principles
+            1. Flexibile Grids
+            2. Fluid Images
+            3. Media Queries
+            11. Getting started with bootstrap
+            1. <div class=”container”>
+            1. <div class =”row”>
+            1. <div class =”col”>
+            1. <h1>Our Menu</h1>
+            2. <h2>FalafelM/h2>
+            3. <p>Chichpea, herbs and spices.</p>
+            4. <img src”image.jpg” class=”img-fluid”/>
+            1. The class “img-fluid” ensures that the image scales to its parent column’s width
+            2. The first element that needs to be added when setting up a bootstrap website is the container element.
+            12. Using Bootstrap styles
+            1. Bootstrap has a large CSS library built by Bootstrap’s developers using thousands of use cases
+            2. Class Fixes
+            1. Response breakpoints
+            1. Extra small < 576
+            2. Small (sm) >= 576px
+            3. Medium (md) >= 768px
+            4. Large (lg) >= 992px
+            5. Extra large (xl) >= 1200px
+            6. Extra extra large (xxl) >= 1400px
+            2. A class abbreviation does not exist for Extra small because this is the default breakpoint in Bootstrap CSS rules
+            3. Modifiers 
+            1. Bootstrap modifiers add a CSS class to change the visual style of components.
+            2. (in context of alerts)
+            1. Primary <- uses bootstrap’s default color; blue
+            2. Secondary
+            3. Success
+            4. Info
+            5. Warning
+            6. Danger <- uses color red
+            7. Light
+            8. Dark
+            4. <div class=”col-6”> becomes <div class=”col-lg-6”> (large)
+            13. Bootstrap Grid
+            1. Building a website using responsive design requires a responsive grid and responsive breakpoints
+            2. Bootstrap provides both of these as part of its library
+            3. The bootstrap gridd system helps us to create web page layouts through a series of rows and columns that house our content. The bootstrap grid system always has a container, rows, and columns
+            4. The container is the root element of your grid.
