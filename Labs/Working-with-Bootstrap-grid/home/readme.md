@@ -18,3 +18,12 @@ Code from Meta:
 Code from Meta compared with my code:
 
 ![Screen Shot 2022-12-31 at 6 14 38 PM](https://user-images.githubusercontent.com/44537080/210157362-3459ddce-b126-472d-b6a2-406b9b024f23.png)
+
+How it should look:
+
+![Screen Shot 2022-12-31 at 6 10 45 PM](https://user-images.githubusercontent.com/44537080/210157939-b66d2ed4-e47c-4083-81c4-b3da4a4dd07e.png)
+
+Finally got it working as expected:
+
+![Screen Shot 2022-12-31 at 6 41 57 PM](https://user-images.githubusercontent.com/44537080/210157953-d085cc8a-27ea-499e-b8d2-65fde2e7619f.png)
+(I was missing the '-lg' portion of the element class syntax)
