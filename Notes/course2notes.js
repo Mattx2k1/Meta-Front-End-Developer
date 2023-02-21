@@ -34,5 +34,7 @@ for (var i = 100; i > 10; i = i - 10) {
 
 
 function listArrayItems(arr) {
-    // code to be added
+    for (let i = 0; i >= arr.length; i++) {
+        // code to be looped goes here
+    }
 }
