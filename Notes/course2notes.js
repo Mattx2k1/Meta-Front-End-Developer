@@ -34,7 +34,10 @@ for (var i = 100; i > 10; i = i - 10) {
 
 
 function listArrayItems(arr) {
-    for (let i = 0; i >= arr.length; i++) {
-        // code to be looped goes here
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i])
     }
 }
+
+var planets = ["Sun", "Moon", "Mercury", "Venus", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto", "Chiron", "Ceres"];
+listArrayItems(planets);
