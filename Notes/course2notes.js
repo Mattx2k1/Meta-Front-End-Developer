@@ -33,3 +33,6 @@ for (var i = 100; i > 10; i = i - 10) {
 }
 
 
+function listArrayItems(arr) {
+    // code to be added
+}
