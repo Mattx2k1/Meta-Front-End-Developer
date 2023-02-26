@@ -35,7 +35,8 @@ for (var i = 100; i > 10; i = i - 10) {
 
 function listArrayItems(arr) {
     for (let i = 0; i < arr.length; i++) {
-        console.log(arr[i])
+        console.log(i, arr[i])
+        console.log(i+1, arr[i])
     }
 }
 
