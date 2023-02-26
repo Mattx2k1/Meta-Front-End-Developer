@@ -9,7 +9,7 @@ function letterFinder (word, match) {
 // Code a 'for' loop inside the function's body. The for loop's counter should start at zero, increment by 1 on each iteration and exit when the counter variable's value is equal to the length of the word parameter.
 
 function letterFinder (word, match) {
-    for (let i = 0; i < word.length(); i++);
+    for (let i = 0; i < word.length; i++);
 }
 
 // Task 3:
@@ -22,7 +22,34 @@ function letterFinder (word, match) {
 function letterFinder (word, match) {
     for (let i = 0; i < word.length(); i++) {
         if (word[i] == match) {
-            
+
         }
     }
 }
+
+// Task 4:
+// console.log the following inside the body of the if statement: console.log('Found the', match, 'at', i).
+
+function letterFinder (word, match) {
+    for(let i = 0; i < word.length; i++) {
+        if (word[i] == match) {
+            console.log('Found the match');
+        }
+    }
+}
+
+// Task 5:
+// Write the else condition. Here you'll just console log the following: console.log('---No match found at', i).
+
+function letterFinder (word, match) {
+    for(let i = 0; i < word.length; i++) {
+        if (word[i] == match) {
+            console.log('Found the match');
+        } else console.log('---No match found at',i);
+    }
+}
+
+// Task 6:
+// Call the letterFinder and pass it as its first argument as the string "test" and as its second argument, the string "t".
+
+letterFinder("test", "t");
