@@ -20,7 +20,7 @@
       3. Interaction with a video player
 4. Accessibility 
    1. In this course we will learn the proper way to use the DOM and HTML elements so that the content is accessible to everyone
-   2. Having text that is not contained within proper tags like paragraph or heading tags makes it harder for assistive technologies to interact with the content.
+   2. Having text that is not contained within proper tags like paragraphs or heading tags makes it harder for assistive technologies to interact with the content.
 5. Extra resources
    1. HTML Elements Reference (Mozilla)
       1. https://developer.mozilla.org/en-US/docs/Web/HTML/Element
@@ -158,5 +158,453 @@
             13. Bootstrap Grid
             1. Building a website using responsive design requires a responsive grid and responsive breakpoints
             2. Bootstrap provides both of these as part of its library
-            3. The bootstrap gridd system helps us to create web page layouts through a series of rows and columns that house our content. The bootstrap grid system always has a container, rows, and columns
+            3. The bootstrap grid system helps us to create web page layouts through a series of rows and columns that house our content. The bootstrap grid system always has a container, rows, and columns
             4. The container is the root element of your grid.
+            14. Bootstrap components 
+            1. Bootstrap includes a pre-made set of UI elements and styles to help you build your website.
+            1. These are called bootstrap components
+            2. Card component
+            3. Alert component
+            4. Alert-info component (makes alert blue)
+            15. SPA = Single Page Applications
+            1. Examples
+            1. Social Media Network
+            2. Maps app
+            3. Messenger App
+            2. Traditional multi-page websites became server intensive as it takes more resources to load individual pages. 
+            3. Two ways of delivering code to browser:
+            1. All at once - Bundles
+            2. Dynamically as needed - Lazy Loading
+            4. User interacting with the page updates the page contents
+            1. PUT request to server
+            1. Server returns JSON - which is less resource heavy than returning a full page
+            16. What is React?
+            1. Available since 2013
+            2. Open source Javascript library
+            3. Core contributors and companies maintain it
+            4. Can develop single page applications
+            5. Can also develop mobile applications with React Native
+            6. The key concept behind React is that it allows you to define components that you can combine to build a web application.
+            17. React component
+            1. Small piece of user interface
+            1. Examples
+            1. Music player
+            2. Photo gallery
+            2. This component model allows:
+            1. Isolated Development
+            2. Isolated Testing
+            3. Re-using Components 
+            18. How React Works
+            1. A React Element has a 1:1 relation to the HTML Element that displays on the page.
+            2. React uses the virtual DOM to update the actual/Browser DOM when it needs to.
+            1. This ensures your application is fast and responsive to users
+            2. Reach checks for changes to the virtual DOM and pushes updates from the virtual DOM to the Brwoser DOM as needed. This means elements of the DOM that are not updated remain the same - reconciliation
+            3. React updates the virtual DOM and compares it to the previous version of the virtual DOM. If a change has occurred, only that element is updated in the browser DOM. Changes on the browser DOM cause the displayed webpage to change.     
+            4. React builds a representation of the browser Document Object Model or DOM in memory called the virtual DOM. As components are updated, React checks to see if the component’s HTML code in the virtual DOM matches the browser DOM. If a change is required, the browser DOM is updated. If nothing has changed, then no update is performed.
+            5. As you know, this is called the reconciliation process
+            6.             3. React Fibre Architecture
+            1. The principle of the React Fibre Architecture is its like a priority system
+            1. What is most important to load and when?
+            4. Component Hierarchy
+            1. Every React application has at least 1 component
+            1. Begins with root
+            1. Example
+            1. App
+            1. NewItemBar
+            2. ShoppingList
+            1. ShoppingItem
+            2. ShoppingItem
+            3. ShoppingItem
+            4. ShoppingItem
+            19. Programming With Javascript
+            1. Week 1
+            1. High-level and low-level languages
+            1. The zeros and ones of binary code is a low-level language because it's closer to being understood by a CPU. JavaScript on the other hand is a high-level language. This means that it has to be converted to binary code so that a CPU can work with it.
+            2. As a high-level language, JavaScript does need to be converted to binary code so that a CPU can work with it.
+            2. JavaScript invented in 1995?
+            3. Jquery was the first library to solve a lot of browser compatibility issues
+            4. React came along in 2011 and then some others followed
+            5. Other Frameworks and Libraries:
+            1. Vue.JS
+            2. Angular
+            3. Knockout
+            4. Backbone
+            5. Ember
+            6. With millions of websites containing JavaScript code from different versions and libraries, there is a lot of old code. This is known as a legacy code. While you probably won't use jQuery to build a modern website today, you might still come across it in a project that is still actively running. But don't worry, sometimes beginners think they have to learn or even master all the different technologies associated with JavaScript. However, that's not really necessary. To be a well-rounded developer, you need to learn and master the basics of plain JavaScript without the frameworks. Once you have this foundation, the pathway will become easier for you to learn a framework built on top of JavaScript, such as React.
+            7. Variables
+            1. Declare by using
+            1. Var
+            2. Let
+            3. Const 
+            8. Data Types
+            1. 7 primitive Data Types in JS:
+            1. String - text in single or double quotes
+            2. Number - numerical values
+            3. Boolean - true/false
+            4. Null - absence of value
+            5. Undefined - unassigned value
+            6. BigInt - like an extra large box that can hold a very large range of numbers
+            7. Symbol - Unique identifier. Ike having a bunch of boxes that all say “Dishes” but each with different serial #s
+            9. Operators
+            1. Are used to perform operations on variables and values. 
+            2. An operator is used to manipulate individual data items and return a result
+            3. Assignment Operator - ‘=’
+            4. Arithmetic Operators
+            1. ‘+’ - addition
+            2. ‘-’ - subtraction
+            3. ‘/’ - division
+            4. ‘*’ - multiplication
+            5. Comparison Operators
+            1. ‘>’ - greater than
+            2. ‘<’ - less than
+            3. ‘==’ - equal to (compares value not type)
+            4. ‘===’ - equal to (compares value and type)
+            5. ‘!=’ - not equal to
+            6. Logical operators
+            1. ‘&&’ - Checks for both conditions to be true
+            2. ‘||’ - checks for at least one condition to be true
+            3. ‘!’ - returns false if the result is true
+            7. Modulus Operator - ‘%’
+            1. This checks how many times you can fit one number into the other and then return the remainder. If I type 9 modulus 8, the value of one is returned, or 16 modulus 8 returns a zero. This is because the number eight divides into the number 16 evenly. There is no remainder as represented here by the zero.
+            8.  Additional operators
+            1. Logical AND operator: && 
+            2. Logical OR operator: || 
+            3. Logical NOT operator: ! 
+            4. The modulus operator: % 
+            5. The equality operator: ==
+            6. The strict equality operator: ===
+            7. The inequality operator: !=
+            8. The strict inequality operator: !==
+            9. The addition assignment operator: += 
+            10. The concatenation assignment operator: += (it's the same as the previous one - more on that later)
+            10. Numbers
+            1. The number of data type is a foundational part of JavaScript as a programming language because it represents both integer and decimal point numbers.
+            2. Without it, you wouldn’t be able to code.
+            3. Foundational data type that represents integers and decimal points
+            11. Strings
+            1. Strings are used to represent and work with a sequence of characters while programming in JavaScript.
+            2. You can use single or double quotation marks to make a string literal.  
+            12. Booleans
+            1. Used to check if a statement is true or false
+            2. Booleans only have two values: true and false
+            3.             2. Week 3
+            1. Programming Paradigms
+            1. Human languages have many variations and forms such as formal/informal and slang. They all perform the exact same function, communication.
+            2. Programming languages are similar and have many styles.
+            1. Just like human languages no one style is better suited than the other.
+            3. Two commonly used paradigms:
+            1. Functional Programming (FP)
+            2. Object-Oriented Programming (OOP)
+            2. camelCase
+            3. Functional Programming
+            1. In functional programming, data and functions that operate on it are clearly separated, not combined inside objects.
+            2. JavaScript allowing me to use the return keyword as described above, I can have multiple function calls, returning data and manipulating values, based on whatever coding challenge I have in front of me.
+            3. Being able to return custom values is one of the foundations that makes functional programming possible.
+            4. In functional programming, we use a lot of functions and variables.
+            5. When writing FP code, we keep data and functionality separate and pass data into functions only when we want something computed.
+            6. In functional programming, functions return new values and then use those values somewhere else in the code.
+            4. Object-Oriented Programming
+            1. In this style, we group data and functionality as properties and methods inside objects.
+            2. OOP helps us model real-life objects. 
+            3. It works best when the grouping of properties and data in an object makes logical sense; meaning the properties and methods “belong together”.
+            5. “To summarize this point, we can say that the Functional Programming paradigm works by keeping the data and functionality separate. It's counterpart, OOP, works by keeping the data and functionality grouped in meaningful objects.”
+            6. There are many more concepts and ideas in functional programming
+            1. Here are some of the most important ones:
+            1. First-class functions
+            1. It is often said that functions in JavaScript are “first-class citizens” which means that a function in JavaScript is just another value that we can:
+            1. Pass to other functions
+            2. Save in a variable
+            3. Return from other functions
+            2. A function in JavaScript is just a value; almost no different than a string or a number.
+            1. For example, in JavaScipt it is perfectly normal to pass a function invocation to another function.
+            2. High-order function
+            1. A high-order function is a function that has either one or both of the following characteristics:
+            1. It accepts other functions as arguments
+            2. It returns functions when invoked
+            3. There is no “special way” of defining high-order functions in JavaScript. It is simply a feature of the language. The language itself allows me to pass a function to another function, or return a function from another function.
+            3. Pure functions and side-effects
+            1. A pure function returns the exact same result as long as it’s given the same values.
+            2. Another rule for a function to be considered pure is that it should not have side-effects.
+            3. A side-effect is any instance where a function makes a change outside of itself
+            1. This includes:
+            1. Changing variable values outside of the function itself, or even relying on outside variables
+            2. Calling a Browser API (even the console itself)
+            3. Calling Math.random() - since the value cannot be reliably repeated
+            7. Function Calling and Recursion
+            1. Functions that repeat tasks are helpful; unless they run endlessly
+            2. What recursive functions are
+            1. When a function calls itself, this is what is known as recursion
+            3. How to avoid getting stuck in an infinite loop
+            1. Need a condition to stop. In the provided example, a variable was added above the function called counter and the condition ‘if counter = 0: return;’ within the function. After that middle line the function called itself again
+            1. The order is important
+            8. Scope
+            1. All about accessibility
+            1. It determines which parts of the code are accessible and which parts are inaccessible.
+            2. For example what variables can a function access within code?
+            2. Scope Chain in Javascript
+            1. The code that exists outside of a function is referred to as global scope
+            2. All the code inside of a function is known as local scope or function scope.
+            3. If a variable is defined within a function, then you can say it is scoped to that function. This is also known as local scope.
+            4. This chain of scope references is referred to as the Scope Chain.
+            5. Each function keeps a reference to its parent scope
+            3. A nice way to think about how scope works in Javascript is a two-way mirror
+            1. This is a piece of glass where only one side is transparent
+            2. For example, if a restaurant uses two-way glass, people outside the restaurant can’t see what’s happening inside but the people inside can see what is happening outside. 
+            3. Additional resources
+            1. Here is a list of resources that may be helpful as you continue your learning journey.
+            2. These resources provide some more in-depth information on the topics covered in this module.
+            3. Mozilla Developer Network Expressions and Operators 
+            4. Mozilla Developer Network Operator Precedence and Associativity 
+            5. JavaScript Primitive Values 
+            6. ECMA262 Specification 
+            7. jQuery Official Website 
+            8. React Official Website 
+            9. StackOverflow Developer Survey 2021 Most Popular Technologies
+            10. Emojis
+            20. Writing Statements
+            1. Conditional Statements
+            1. If statement
+            1. The if statement checks a condition and will execute a code block if the condition is met or true.
+            2. If Else statement
+            1. Same as above with added functionality. If something is true execute nested code block under if. If not true (else) execute nested code block under else.
+            2. Better suited for 
+            3. Else-If statement
+            1. Same as above with added functionality. If something is true execute nested code block under if. If the first statement is not true and the second or later (else if) condition is true, execute the nested code block under else if. If not true (else) execute nested code block under else.
+            4. Else statement
+            1. Execute if all other conditional statements above = false
+            5. Switch statement
+            1. Uses case and checks for parameter as a condition on each case. Default is the last option and it is similar to else.
+            2. if there are a lot of possible outcomes, it is best practice to use a switch statement because it is easier less verbose. Being easier to read, it is easier to follow the logic, and thus reduce cognitive load of reading multiple conditions.
+            21. Looping Constructs
+            1. Loops are used to continually execute repeated blocks of code until a certain condition is met/satisfied
+            2. Loops are similar to conditionals; a condition must be satisfied in order for the code to execute.
+            3. Different kind of loops
+            1. For
+            1. Set the value of the counter
+            2. Specify the condition - i < 3;
+            3. Increment the counter - i++
+            4. For (var i = 1; i <= 3; i++) {
+        console.log(i)
+}
+            5. Exit condition - works with the incrementor to prevent the loop from running forever by specifying at which value to terminate the loop.
+
+               2. While
+               1. Similar to the for loop; however the start counter is set outside of the while loop and the incrementing is done inside the loop’s body.
+               2. Code that repeats as long as a specified condition is true
+               3. var i = 1;
+while (i < 6) {
+   console.log(i)
+   i = i +1;
+}
+console.log('Countdown finished!');
+               4.                   3. Nested
+                  1. Putting a loop within another loop. 
+                  2. A practical way to think about it is creating a for loop that counts years
+                  1. Then nesting a for loop that counts months within the above parent loop
+                  2. Result would be something like:
+                  1. Year
+                  1. Month 
+                  2. Month
+                  3. Month
+                  2. Year
+                  1. Month
+                  2. Month
+                  3. Month 
+                  3. For (var year = 2023; year < 2025; year++) {
+        console.log(year);
+        For (var month = 6; month < 9; month++) {
+                console.log(“-----”, month)
+        }
+}
+                     4. Examples of loops being used:
+                     1. If I'm coding an email client, I will get some structured data about the emails to be displayed in the inbox, then I'll use a loop to actually display it in a nicely-formatted way.
+                     2. If I'm coding an e-commerce site selling cars, I will get a source of nicely-structured data on each of the cars, then loop over that data to display it on the screen.
+                     3. If I'm coding a calendar online, I'll loop over the data contained in each of the days to display a nicely-formatted calendar.
+                     4. There are many, many other examples of using loops in code.
+                     5. Using loops with data that is properly formatted for a given task is a crucial component of building software.
+                     6. In the lessons that follow, we'll learn about different ways of grouping related data and of displaying it on the screen using JavaScript.
+                     7. When combined with what you've already learned about loops, this gives you the skills to build various kinds of user interfaces where there is repetitive information.
+                     8. Some more specific examples include:
+                     1. looping over blog post titles in some structured data, and displaying each blog post title on a blog home page
+                     2. looping over social media posts in some structured data, and displaying each social media post based on some conditions
+                     3. looping over some structured data on clothing available for sale in an online clothing store, and displaying relevant data for each item of clothing
+                     5. Additional resources:
+                     1. Comparison Operators 
+                     2. Truthy 
+                     3. Falsy 
+                     4. Conditional statements
+                     5. In JavaScript, there is also a shorthand version of writing a conditional statement, known as the conditional (ternary) operator: Conditional (ternary) operator
+                     22. Functions
+                     1. One of the basic principles of programming can be summed up to DRY; Don’t Repeat Yourself. Thanks to functions you can avoid repetition
+                     2. With functions, you can take several lines of code that performs a set of related actions and then group them together under a single label.
+                     3. Then when you need to run the code that you’ve saved, you can just invoke or call the function
+                     1. You can run the code as many times as you want
+                     4. These values are known as function parameters and are placed inside the function definition.
+                     5. The values passed to functions are arguments
+                     6. Arguments are parameters 
+                     7. Example
+                     1. Function addTwoNums(a,b) {
+        Var c = a+b;
+        console.log(c);
+}
+                     2. To call the function and pass parameters 2,4:
+                        1. addTwoNums(2,4);
+                        23. Storing data in arrays
+                        1. A collection of pieces of data organized into an object
+                        2. Array literal syntax = []
+                        1. Var train1 = [“car1”, “car2”, “car3”];
+                        1. Indices = [0, 1, 2]
+                        1. 0 = car1
+                        2. 1 = car2
+                        3. 2 = ca3
+                        2. console.log(train1[0]);
+                        1. Result = car1
+                        24. Objects
+                        1. A way to assemble a collective set of variables under one label
+                        2. Adding a property is known as extending the object
+                        3. Key value pairs of variables
+                        1. Variable name becomes property key
+                        2. Variable value becomes property value
+                        4. Three common ways to build objects:
+                        1. One of the most common ways of building an object in JavaScript is using the object literal syntax: {}.
+                        1. Var user = {}; // create an object
+                        2. Sometimes, an entire object can be immediately built, using the object literal syntax, by specifying the object's properties, delimited as key-value pairs
+                        1. //creating an object with properties and their values
+        var assistantManager = {
+        rangeTilesPerTurn: 3,
+        socialSkills: 30,
+        streetSmarts: 30,
+        health: 40,
+        specialAbility: "young and ambitious",
+        greeting: "Let's make some money"
+}
+                           3.                            5. Meant to mimic real-world objects
+                           1. Example 1 (dot-notation): 
+                           1. dog.legs = 4;
+                           2. Dog.sound = “Woof”;
+                           2. Example 2 (object literal): dog = {
+        legs: 4,
+        Sound: “Woof”,
+}
+                              6. Dot notation
+                              1. Placing a dot operator between the object name and the property
+                              1. Example - human.hands = 2;
+                              2. Can access properties of the object like so:
+                              1. console.log(object.property); // displays property’s value in dev console
+                              7. Object Literals
+                              1. To access the object, we can console log the entire object:
+                              1. console.log(object); // displays the object in dev console
+                              8. Bracket Notation
+                              1. Example: 
+                              1. Var house = {};
+House[“rooms”] = 4;
+House[‘color’] = “pink;
+house[”priceUSD”] = 12345;
+                              2. console.log(house); 
+                                 1. // {rooms: 4, color: 'pink', priceUSD: 12345}
+                                 9. Arrays are objects
+                                 1. That means that arrays also have some built-in properties and methods.
+                                 2. One of the most commonly used built-in methods on arrays are the push() and the pop() methods.
+                                 10. Math object
+                                 1. JavaScript has handy built-in objects. One of these popular built-in objects is the Math object.
+                                 2. Here are some of the built-in number constants that exist on the Math object: 
+                                 1. The PI number: Math.PI which is approximately 3.14159
+                                 2. The Euler's constant: Math.E which is approximately 2.718
+                                 3. The natural logarithm of 2: Math.LN2 which is approximately 0.693
+                                 3. Rounding methods
+                                 1.  Math.ceil() - rounds up to the closest integer 
+                                 2.  Math.floor() - rounds down to the closest integer 
+                                 3.  Math.round() - rounds up to the closest integer if the decimal is .5 or above; otherwise, rounds down to the closest integer 
+                                 4.  Math.trunc() - trims the decimal, leaving only the integer
+                                 4. Arithmetic and calculus methods
+                                 1. Here is a non-conclusive list of some common arithmetic and calculus methods that exist on the Math object: 
+                                 1. Math.pow(2,3) - calculates the number 2 to the power of 3, the result is 8 
+                                 2. Math.sqrt(16) - calculates the square root of 16, the result is 4 
+                                 3. Math.cbrt(8) - finds the cube root of 8, the result is 2 
+                                 4. Math.abs(-10) - returns the absolute value, the result is 10 
+                                 5. Logarithmic methods: Math.log(), Math.log2(), Math.log10() 
+                                 6. Return the minimum and maximum values of all the inputs: Math.min(9,8,7) returns 7, Math.max(9,8,7) returns 9.
+                                 7.  Trigonometric methods: Math.sin(), Math.cos(), Math.tan(), etc.
+                                 5. Random Method
+                                 1. A part of the Math object that can generate a number between 0 and 0.99
+                                 6. Ceil Method
+                                 1. A part of the Math object that rounds a decimal up to the nearest integer
+                                 7. Combining above methods
+                                 1. build some code that will combine the two to return a random integer between 0 and 10. The first step is to create a variable and assign it the value of the math dot random method multiplied by 10. I need to pass this variable through the ceil method to ensure that an integer instead of a decimal value is created. So, I declare the variable rounded and assign it the value of the math dot ceil method containing the decimal variable inside the parentheses. Finally, I use the console dot log method to output the variable rounded. If I run the code, notice that a value between 0 and 10 is output to the console. 
+                                 11. Iterable
+                                 1. An iterable is any datatype that can be iterated over using a “for of” loop.
+                                 2. Arrays and Strings are Iterables
+                                 3. In the world of JavaScript, it can often be said that strings behave like arrays. Strings are array-like.
+                                 4. You can run a for loop over an array of letters or a string and get the same result
+                                 12. String cheat sheet
+                                 1. String Functions
+                                 1. Length of a string - “string.length”
+                                 2. Read individual character in a string - “string.charAt(0);”
+                                 3. The concat() method joins two strings - "Wo".concat("rl").concat("d"); // 'World'
+                                 4. The indexOf returns the location of the first position that matches a character: 
+                                 5. The lastIndexOf finds the last match, otherwise it works the same as indexOf.
+                                 6. The split method chops up the string into an array of sub-strings - "ho-ho-ho".split("-"); // ['ho', 'ho', 'ho']
+                                 7. Upper and lower case:
+                                 1. greet.toUpperCase(); // "HELLO, "
+                                 2. greet.toLowerCase(); // "hello, "
+                                 13. Object Methods
+                                 1. The same way you can add key/value pairs of data to an object, you can make one of those values a function.
+                                 2. Remember, value of an key in an object is considered a property
+                                 3. When a function is a property of an object, it is then referred to as a method
+                                 1. This is a function that can be accessed only through the JavaScript object that it is a member of.
+                                 14. Additional resources
+                                 1. JavaScript Functions 
+                                 2. JavaScript Object Basics 
+                                 3. typeof operator in JavaScript 
+                                 4. Arrays are "list-like objects" 
+                                 15.                                  25. typeOf
+                                 1. JavaScript operator that evaluates a parameter and returns the data type as a string
+                                 26. Bugs and Errors
+                                 1. Bug
+                                 1. A bug causes a program to run in an unintended way
+                                 2. Error
+                                 1. An error causes a program to stop running
+                                 2. Some of the most common error types:
+                                 1. Syntax Error
+                                 2. Type Error
+                                 3. Reference Error
+                                 27. Try/Catch Blocks
+                                 1. Try
+                                 1. If a piece of code throws an error, it can get wrapped inside a try block. 
+                                 2. Catch
+                                 1. Then you can catch the error with the catch block, and use it to do something
+                                 2. The catch block accepts something called an error which is an object
+                                 3. Throw
+                                 1. Using the throw keyword, you can force an error to be thrown from the try block to the catch block
+                                 2. It is important to remember that you can use the throw keyword outside the the try block, but it will not be possible to catch it.
+                                 4. Structure
+                                 1. The try block starts with the try keyword
+                                 1. Inside of the curly braces, you place the code that you think will throw an error 
+                                 2. Next is the catch block which catches the error that the try block produces. It begins with the catch keyword and in parenthesis, you have a built-in error object that you can name whatever you like
+                                 1. Inside the curly braces, you place the code you would like to execute
+                                 28. Syntax, logical, and runtime errors
+                                 1. Most common errors in JavaScript:
+                                 1. ReferenceError
+                                 1. A ReferenceError gets thrown when, for example, one tries to use variables that haven’t been declared anywhere
+                                 2. SyyntaxError
+                                 1. Any kind of invalid JavaScript code will cause a SyntaxError
+                                 3. TypeError
+                                 1. A TypeError is thrown when, for example, trying to run a method on a non-supported data type
+                                 4. RangeError
+                                 1. A RangeError is thrown when we’re giving a value to a function, but that value is out of the allowed range of acceptable input values
+                                 2. Other errors:
+                                 1. AggregateError
+                                 2. Error
+                                 3. InternalError
+                                 4. URIError
+                                 29. Types of empty values
+                                 1. Undefined
+                                 1. In JS, there may be times you’re building something that hasn’t been clearly defined yet and so you can’t assign a value to it
+                                 2. fortunately, there is a way to store it so that you can assign it later using the undefined data type.
+                                 3. The undefined data type can only hold one value, undefined
+                                 2. Null
+                                 1. Intentional absence of any object value
+                                 2. It is also the return value of some built-in JavaScript methods
+                                 3. Empty strings
+                                 1. Var name1 = ‘ ‘;
+                                 2. Var name2 = “ “;
