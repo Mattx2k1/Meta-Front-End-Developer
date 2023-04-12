@@ -58,29 +58,79 @@
 //     }
 // }
 
+// solution
+
+// function addTwoNums(a,b) {
+//     try {
+//         if(typeof(a) != 'number') {
+//             throw new ReferenceError('the first argument is not a number')
+//         } else if (typeof(b) != 'number') {
+//             throw new ReferenceError('the second argument is not a number')
+//         } else {
+//             console.log(a + b)
+//         }
+//     } catch(err) {
+//         console.log(err)
+//     }
+// }
+
 // addTwoNums(5, "5");
 
 // Task 5: Update the catch block
 // Inside the catch block, update the code from console.log(err) to console.log("Error!", err).
 
-function addTwoNums(a, b) {
-    if (typeof(a !== Number)) {
-        throw(ReferenceError("the first argument is not a number"))
-    } else if (typeof(b !== Number)) {
-        throw(ReferenceError("the second argument is not a number"))
-    } else try {
-        console.log(a+b) 
-    } catch (err) {
-        console.log("Error", err);
-    }
-}
+// function addTwoNums(a, b) {
+//     if (typeof(a !== Number)) {
+//         throw(ReferenceError("the first argument is not a number"))
+//     } else if (typeof(b !== Number)) {
+//         throw(ReferenceError("the second argument is not a number"))
+//     } else try {
+//         console.log(a+b) 
+//     } catch (err) {
+//         console.log("Error", err);
+//     }
+// }
+
+// solution
+
+// function addTwoNums(a,b) {
+//     try {
+//         if(typeof(a) != 'number') {
+//             throw new ReferenceError('the first argument is not a number')
+//         } else if (typeof(b) != 'number') {
+//             throw new ReferenceError('the second argument is not a number')
+//         } else {
+//             console.log(a + b)
+//         }
+//     } catch(err) {
+//         console.log("Error!", err)
+//     }
+// }
 
 // Task 6: Invoke the addTwoNums function
 // Invoke the addTwoNums function using 5 and "5" as arguments.
 
-addTwoNums(5, "5");
+// addTwoNums(5, "5");
 
 // Task 7: Add another console log under the addTwoNums function invocation
 // Add another line of code that console logs the string "It still works".
 
-console.log("It still works");
+// console.log("It still works");
+
+// solution
+
+function addTwoNums(a,b) {
+    try {
+        if(typeof(a) != 'number') {
+            throw new ReferenceError('the first argument is not a number')
+        } else if (typeof(b) != 'number') {
+            throw new ReferenceError('the second argument is not a number')
+        } else {
+            console.log(a + b)
+        }
+    } catch(err) {
+        console.log("Error!", err)
+    }
+}
+addTwoNums(5, "5")
+console.log("It still works")
