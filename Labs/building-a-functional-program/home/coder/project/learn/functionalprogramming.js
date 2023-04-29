@@ -9,8 +9,14 @@ function consoleStyler(color, background, fontSize, txt) {
 }
 
 // Task 2: Build another console log message generator
-function celebrateStyler() {
+function celebrateStyler(reason) {
+    let fontStyle = "color: tomotato; font-size: 50px"
+    if (reason == "birthday") {
+        console.log(`%cHappy birthday"`, fontStyle);
+    }
+} else if (reason == "champions") {
     
+
 }
 
 // Task 3: Run both the consoleStyler and the celebrateStyler functions
