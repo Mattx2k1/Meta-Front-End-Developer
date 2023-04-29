@@ -3,8 +3,7 @@ function consoleStyler(color, background, fontSize, txt) {
     let message = "%c" + txt;
     let style = `color: ${color};`
     style += `background: ${background};`
-    style += `font-size: ${fontSize};
-    `
+    style += `font-size: ${fontSize};`
     console.log(message);
 }
 
