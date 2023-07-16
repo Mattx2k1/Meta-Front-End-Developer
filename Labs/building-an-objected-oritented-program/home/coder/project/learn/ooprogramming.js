@@ -18,6 +18,17 @@ class Person {
 
 // Task 2: Code a Worker class
 
+class Worker extends Person {
+    constructor(xp = 0, hourlyWage = 10, name, age, energy) {
+        super(name, color, energy);
+        this.xp = xp;
+        this.hourlyWage = hourlyWage;
+    }
+    goToWork() {
+        this.xp += 10;
+    }
+}
+
 // Task 3: Code an intern object, run methods
 function intern() {
 
