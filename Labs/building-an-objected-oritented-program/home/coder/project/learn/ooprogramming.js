@@ -34,19 +34,16 @@ function intern() {
     var newWorker = new Worker(name = "Bob", age = 21, energy = 110, xp = 0, hourlyWage = 10)
 
     newWorker.goToWork();
-    return console.log(newWorker);
+    return newWorker;
 
 }
-
-intern();
 
 // Task 4: Code a manager object, methods
 function manager() {
     var newManager = new Worker (name ="Alice", age = 30, energy = 120, xp = 100, hourlyWage = 30)
 
     newManager.doSomethingFun();
-    return console.log(newManager);
+    return newManager;
     
 }
 
-manager();
