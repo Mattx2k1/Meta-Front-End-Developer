@@ -26,8 +26,8 @@ bird.canFly = true;
 bird.hasFeathers = true;
 
 function birdCan(animalObject) {
-    for (i of Object.keys(animalObject)) {
-        console.log(`${Object.keys(animalObject)}: ${Object.values(animalObject)}`);
+    for ([key, value] of Object.entries(animalObject)) {
+        console.log(`${key}: ${value}`);
     }
 }
 
