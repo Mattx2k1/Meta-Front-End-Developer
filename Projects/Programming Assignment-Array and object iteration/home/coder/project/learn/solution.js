@@ -25,5 +25,13 @@ bird.canFly = true;
 
 bird.hasFeathers = true;
 
+function birdCan(animalObject) {
+    for (var i of Object.entries(animalObject)) {
+        console.log(Object.entries(animalObject));
+    }
+}
+
+birdCan(bird);
+
 // Task 3
 
