@@ -2,8 +2,8 @@
 
 var dairy = ['cheese', 'sour cream', 'milk', 'yogurt', 'ice cream', 'milkshake']
 
-function logDairy(foodgroup) {
-    for (key of foodgroup) {
+function logDairy() {
+    for (key of dairy) {
         console.log(key);
     }
 
@@ -25,7 +25,7 @@ bird.canFly = true;
 
 bird.hasFeathers = true;
 
-function birdCan(bird) {
+function birdCan() {
     for ([key, value] of Object.entries(bird)) {
         console.log(`${key}: ${value}`);
     }
@@ -35,7 +35,7 @@ birdCan(bird);
 
 // Task 3
 
-function animalCan(bird, animal) {
+function animalCan() {
     for([key, value] of Object.entries(bird)) {
         console.log(`${key}: ${value}`);
     }
