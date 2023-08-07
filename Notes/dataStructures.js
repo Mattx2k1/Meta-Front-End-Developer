@@ -13,3 +13,28 @@ for(i = 0; i < grades.length; i++) {
 
 // Display in the console (the result of the variable divided by the length of the array)
 console.log(gradeSum / grades.length)
+
+// examples
+
+// the forEach() method
+
+// Arrays in JavaScript come with a handy method that allows you to loop over each of their members. 
+
+// Here's the basic syntax
+
+// create an array
+const fruits = ['kiwi', 'mango', 'apple', 'pear'];
+//create a function that takes fruit and index as parameters
+function appendIndex(fruit, index) {
+    // print to console the index and fruit
+    console.log(`${index}. ${fruit}`)
+}
+
+// fruits is an array and we're running the forEach method on this array
+// When we call the 'forEach' method on the fruits array, and add the function as a parameter, we are actioning the function on each of the array's members
+// this method is like a built in for loop for arrays
+// so for each entry in the array it is actioning the code in the body of the function
+// this means it is taking in the array and parsing each item in the array as a 'fruit' and its index position within the array, and then printing to console the index position and fruit at that current iteration in the loop
+// this continues until each array member has been iterated
+fruits.forEach(appendIndex);
+
