@@ -63,6 +63,71 @@ nums.filter( function(num) {
 //     return num / 10;
 // })
 
+// need to use the variable for the array?
+
 nums.map( function(num) {
     return num / 10;
 })
+
+// Working with Objects in JavaScript
+
+// convert an object to an array:
+
+const result = [];
+const drone = {
+    speed: 100,
+    color: 'yellow'
+}
+
+const droneKeys = Object.keys(drone);
+droneKeys.forEach( function(key) {
+    result.push(key, drone[key])
+})
+console.log(result);
+
+/*
+
+Although this is possible and works, having to do something like this might mean that you haven't chosen the correct data structure to work with in your code.
+
+On the flip side, sometimes you don't get to pick the data structure you're working with. Perhaps that data comes in from a third-party data provider and all you can do is code your program so that it consumes it. You'll learn more about the interchange of data on the web when you learn about JSON (JavaScript Object Notation).
+
+*/
+
+// Working with Maps in JavaScript
+
+// A map can feel very similar to an object in JS.
+
+// However, it doesn't have inheritance. No prototypes! This makes it useful as a data storage.
+
+// example:
+
+let bestBoxers = new Map();
+bestBoxers.set(1, "The Champion");
+bestBoxers.set(2, "The Runner-up");
+bestBoxers.set(3, "The third place");
+
+console.log(bestBoxers);
+
+// To get a specific value, you need to use the get() method. For example:  
+
+bestBoxers.get(1); // 'The Champion'
+
+// need to console log this to see the output
+console.log(bestBoxers.get(1));
+
+// Working with Sets in JavaScript
+
+// A set is a collection of unique values.
+
+// To build a new set, you can use the Set constructor:
+
+new Set();
+
+// The Set constructor can, for example, accept an array.
+
+// This means that we can use it to quickly filter an array for unique members.
+
+const repetitiveFruits =['apple', 'pear', 'apple', 'pear', 'plum', 'apple'];
+
+const uniqueFruits = new Set(repetitiveFruits);
+console.log(uniqueFruits);
