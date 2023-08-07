@@ -38,3 +38,31 @@ function appendIndex(fruit, index) {
 // this continues until each array member has been iterated
 fruits.forEach(appendIndex);
 
+// the filter() method
+
+// Filter - filters your arrays based on a specific test (condition?). Those array items that pass the test are returned.
+
+// example - tested this and nothing generates. Used console.log to see the results and boolean values generate
+
+// create the array
+const nums = [0,10,20,30,40,50];
+
+// run method on array / anonymous function?
+nums.filter( function(num) {
+    // return numbers greater than 20
+    return num > 20;
+})
+
+// map method
+
+// This method is used to map each array item over to another array's item, based on whatever work is performed inside the function that is passed-in to the map as a parameter. 
+
+// mapping array directly - tested this and it does not work
+
+// [0,10,20,30,40,50].map( function(num) {
+//     return num / 10;
+// })
+
+nums.map( function(num) {
+    return num / 10;
+})
