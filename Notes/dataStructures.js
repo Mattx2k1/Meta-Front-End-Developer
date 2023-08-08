@@ -131,3 +131,15 @@ const repetitiveFruits =['apple', 'pear', 'apple', 'pear', 'plum', 'apple'];
 
 const uniqueFruits = new Set(repetitiveFruits);
 console.log(uniqueFruits);
+
+// concatenating using the rest operator:
+
+const fruits2 = ['apple', 'pear', 'plum']
+const berries = ['blueberry', 'strawberry']
+
+const fruitsAndBerries = [...fruits2, ...berries];
+
+console.log(fruitsAndBerries);
+
+
+
