@@ -188,3 +188,7 @@ const fruits3 = [...fruits1];
 fruits1.pop();
 
 console.log(fruits1, "not", fruits3);
+
+/*
+Both spread and rest operators have the same syntax in JavaScript, but they perform different functionalities. The spread operator in JavaScript expands values in arrays and strings into individual elements, whereas the rest operator puts the values of user-specified data into a JavaScript array. 
+*/
