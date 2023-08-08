@@ -132,7 +132,7 @@ const repetitiveFruits =['apple', 'pear', 'apple', 'pear', 'plum', 'apple'];
 const uniqueFruits = new Set(repetitiveFruits);
 console.log(uniqueFruits);
 
-// concatenating using the rest operator:
+// concatenating arrays using the rest operator:
 
 const fruits2 = ['apple', 'pear', 'plum']
 const berries = ['blueberry', 'strawberry']
@@ -141,5 +141,50 @@ const fruitsAndBerries = [...fruits2, ...berries];
 
 console.log(fruitsAndBerries);
 
+// also able to join objects:
 
+const flying = { wings: 2 }
+const car = { wheels: 4 }
 
+const flyingCar = {...flying, ...car}
+
+console.log(flyingCar);
+
+// spread operator to add members to array:
+
+let veggies = ['onion', 'parsley'];
+veggies = [...veggies, 'carrot', 'beetroot'];
+
+console.log(veggies);
+
+// Convert a string to an array using the spread operator
+
+const greeting = 'hello';
+const arrayOfChars = [...greeting];
+
+console.log(arrayOfChars);
+
+// Copy either an object or an array into a separate one
+
+const car1 = {
+    speed: 200,
+    color: 'yellow'
+}
+
+const car2 ={...car1};
+
+console.log(car2);
+
+car1.speed = 201;
+
+console.log(car1.speed, car2.speed);
+
+// You can copy an array into a completely separate array, also using the spread operator, like this:
+
+const fruits1 = ['apples', 'pears']
+
+const fruits3 = [...fruits1];
+
+fruits1.pop();
+
+console.log(fruits1, "not", fruits3);
