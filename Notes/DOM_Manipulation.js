@@ -42,3 +42,43 @@ h2.setAttribute('class', 'secondary');
 // notice the HTML structure's output
 
 document.body.appendChild(h2);
+
+// JavaScript Selectors
+
+// select an element on the page, the parameter is the element surrunded by single quotes. Selects first element on page?
+
+document.querySelector()
+
+// selects the (first?) paragraph element or <p> element
+
+document.querySelector('p')
+
+// selects the (first?) anchor element or <a href=""> element
+
+document.querySelector('a');
+
+// select the (first?) image element or <img> element
+
+document.querySelector('img');
+
+// There is a similarily named JS selector that allows me to get all the matches from a web page
+
+// it's the query selector all method
+
+document.querySelectorAll();
+
+// select all paragraph elements on page
+
+document.querySelectorAll('p');
+
+// find elements by their id
+
+document.getElementById()
+
+// find elements by their class
+
+document.getElementsByClassName();
+
+//  global variable 'v' targeting the video element
+
+var v = document.querySelector("video");
