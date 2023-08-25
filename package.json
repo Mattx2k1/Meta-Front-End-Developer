@@ -1,0 +1,20 @@
+{
+  "name": "meta-front-end-developer",
+  "version": "1.0.0",
+  "description": "Documenting my journey and progress of the Meta Front-End Developer Cert through Meta Elevate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mattx2k1/Meta-Front-End-Developer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mattx2k1/Meta-Front-End-Developer/issues"
+  },
+  "homepage": "https://github.com/Mattx2k1/Meta-Front-End-Developer#readme"
+}
