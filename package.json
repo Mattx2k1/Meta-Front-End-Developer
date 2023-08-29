@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Mattx2k1/Meta-Front-End-Developer/issues"
   },
-  "homepage": "https://github.com/Mattx2k1/Meta-Front-End-Developer#readme"
+  "homepage": "https://github.com/Mattx2k1/Meta-Front-End-Developer#readme",
+  "dependencies": {
+    "jest": "^29.6.4"
+  }
 }
