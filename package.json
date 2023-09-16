@@ -19,5 +19,6 @@
   "homepage": "https://github.com/Mattx2k1/Meta-Front-End-Developer#readme",
   "dependencies": {
     "jest": "^29.6.4"
-  }
+  },
+  "devDependencies": {}
 }
