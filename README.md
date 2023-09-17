@@ -40,6 +40,27 @@ npm --version
 - Instructor version: 8.5
 - My version: 9.8.1
 
-#### Feedback on this module / section of the course:
-1. It got difficult to follow along with what the instructor was saying, mainly because the closed captions weren't 100% correct and because the instructional videos were so blurry, it was near impossible to make out what I was reading. I will have to test this on other screens to be sure and will report back with updates.
+Checking to see if I have Jest testing framework installed on my system:
+
+```
+jest --version
+```
+
+- Instructor version: 'command jest not found'
+- My version: 'command not found: jest'
+
+We then get into the install steps, which I tried several times and Jest is still not found. Documenting below:
+
+Adding the package.json file to the project:
+
+```
+npm init -y
+```
+
+"The dash y flag automatically answers yes to all the questions that init command asks during installation."
+
+
+
+#### Feedback on this module/section of the course:
+1. It got difficult to follow along with what the instructor was saying, mainly because the closed captions weren't 100% correct, and because the instructional videos were so blurry, it was nearly impossible to make out what I was reading. I will have to test this on other screens to be sure and will report back with updates.
 2. 
