@@ -173,7 +173,10 @@ Looks like the correct syntax to add it locally is:
 npm install --save-dev jest
 ```
 
-I can see this better now with the improved screen resolution. 
+I can see this better now with the improved screen resolution. I can also see the attribute changes for the "dependencies" key to "devDependencies":
+
+![Screen Shot 2023-09-17 at 12 59 49 PM](https://github.com/Mattx2k1/Meta-Front-End-Developer/assets/44537080/c8b4e15b-3d07-4fd0-8134-a974fa878eee)
+
 
 Now I am getting more errors because of readme file updates. Let me save this so far and try again.
 
@@ -183,8 +186,14 @@ Steps:
 3. git commit -m"updated readme from remote repository"
 4. saved/commit this readme file on github
 5. See another error message; rinse and repeats steps 2-4 to screenshot error (it disappears as I scroll)
-6. 
+6. Advice in the above article from stackoverflow still not working. Just opened a new terminal tab and did a new git commit command to save time
+7. git pushed my remaining changes.
+
+And success, after installing the Jest framework local to the project, using the exact command line syntax, I get the expected test results when running the test:
+
+<img width="395" alt="Screen Shot 2023-09-17 at 1 04 42 PM" src="https://github.com/Mattx2k1/Meta-Front-End-Developer/assets/44537080/22e5b35f-2e13-45c0-9315-d3c76d6fc34f">
+
 
 #### Feedback on this module/section of the course:
 1. It got difficult to follow along with what the instructor was saying, mainly because the closed captions weren't 100% correct, and because the instructional videos were so blurry, it was nearly impossible to make out what I was reading. I will have to test this on other screens to be sure and will report back with updates. Nevermind; I see now in the settings menu at the bottom-right of the video embed that the quality can be adjusted. 
-2. 
+2. I got caught up for a while just figuring out how to get the expected output from the console and installing the prject dependencies. It was a good learning experience to work through and troubleshoot why it all wasn't working. I complicated this by my use of git and github within the project, but I think it helped with my learning overall.
