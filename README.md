@@ -163,7 +163,25 @@ Seeing this on the discussion forums:
 > 
 > if everything is green it means u have passed .
 
+It looks like that folder is not present in that path. 
+
 https://www.coursera.org/learn/programming-with-javascript/discussions/forums/GfMA9PNNEeyFLA7-B9YT0Q/threads/m4GkZjtJEe6fqw5g8_UaQQ
+
+Looks like the correct syntax to add it locally is:
+
+```
+npm install --save-dev jest
+```
+
+I can see this better now with the improved screen resolution. 
+
+Now I am getting more errors because of readme file updates. Let me save this so far and try again.
+
+Steps:
+1. found this: https://stackoverflow.com/questions/19085807/please-enter-a-commit-message-to-explain-why-this-merge-is-necessary-especially
+2. Decided to open a new terminal window
+3. git commit -m"updated readme from remote repository"
+4. saved/commit this readme file on github
 
 #### Feedback on this module/section of the course:
 1. It got difficult to follow along with what the instructor was saying, mainly because the closed captions weren't 100% correct, and because the instructional videos were so blurry, it was nearly impossible to make out what I was reading. I will have to test this on other screens to be sure and will report back with updates. Nevermind; I see now in the settings menu at the bottom-right of the video embed that the quality can be adjusted. 
