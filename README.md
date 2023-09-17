@@ -182,6 +182,8 @@ Steps:
 2. Decided to open a new terminal window
 3. git commit -m"updated readme from remote repository"
 4. saved/commit this readme file on github
+5. See another error message; rinse and repeats steps 2-4 to screenshot error (it disappears as I scroll)
+6. 
 
 #### Feedback on this module/section of the course:
 1. It got difficult to follow along with what the instructor was saying, mainly because the closed captions weren't 100% correct, and because the instructional videos were so blurry, it was nearly impossible to make out what I was reading. I will have to test this on other screens to be sure and will report back with updates. Nevermind; I see now in the settings menu at the bottom-right of the video embed that the quality can be adjusted. 
