@@ -18,4 +18,10 @@ Complete! - https://coursera.org/share/749b19d28c0eea372d32a8408f179e07
 
 ### Course 2 - Programming with Javascript
 
-- Week 1 - Conditionals and Loops
+- Week 4 - Writing tests with Jest
+
+Checking to see if I have Node installed on my system:
+
+```
+node --version
+```
