@@ -22,6 +22,12 @@ Complete! - https://coursera.org/share/749b19d28c0eea372d32a8408f179e07
 
 I have been stuck on week 3 and week for the longest. I think I lost a bit of motivation due to my demands at work and limited time with my family and friends because of it. Getting back on track now. Another component to the delay is testing has always been the more difficult subject for me to understand, at least in the coding bootcamp I attended. I will add here some info that may be useful, the tools and frameworks have newer versions since the time this course was created: 
 
+Steps:
+1. Checking NodeJS and version installed
+2. Checking NPM and version installed
+3. Checking Jest and version installed
+4. Installing Jest
+
 Checking to see if I have NodeJS installed on my system:
 
 ```
@@ -90,8 +96,75 @@ Getting the same result:
 zsh: command not found: jest
 ```
 
+I found this in my search:
+https://stackoverflow.com/questions/50138532/command-not-found-jest
 
+"I ran into similar issue. I fixed it by installing jest globally.":
+
+```
+npm install -g jest
+```
+
+I also run:
+
+```
+npm fund
+```
+
+Success! I now see '29.7.0' as a result to 'jest --version'
+
+Side note; I forgot I had to do a 'git pull' before doing a 'git push' since I updated this readme file via the remote repository here on Github. Seems everything is up to date; including the updated Jest modules.
+
+Next steps:
+1. changes are made to the package.json file. In the "test" key/value pair entry under the "scripts" object I replace the text that is assigned to the "test" key, with "jest" and save the file.
+2. create addFive.test.js
+3. import the addFive function by creating a variable const:
+4. write the test
+
+Import function:
+
+```
+addFive = require(`./addFive`)
+```
+
+Write the test:
+
+```
+test('returns the number plus 5', () => {
+    expect(addFive(1)).toBe(6);
+})
+```
+
+Still not working as expected; I do not see a pass or fail message. I got this error message:
+
+```
+/addFive.test.js:4
+test('returns the number plus 5', () => {
+^
+
+ReferenceError: test is not defined
+```
+
+I believe this is because I installed Jest globally and still need to install it correctly locally. Even though I'm now returning a version number as a result for the 'jest --version' command, it seems something else is missing.
+
+Seeing this on the discussion forums: 
+
+> open terminal 
+> 
+> step 1 : type cd ./jest-testing
+> 
+> step 2 :  type npm install --save-dev jest 
+> 
+> ---wait----
+> 
+> step 3 : type npm run test 
+> 
+> --wait--
+> 
+> if everything is green it means u have passed .
+
+https://www.coursera.org/learn/programming-with-javascript/discussions/forums/GfMA9PNNEeyFLA7-B9YT0Q/threads/m4GkZjtJEe6fqw5g8_UaQQ
 
 #### Feedback on this module/section of the course:
-1. It got difficult to follow along with what the instructor was saying, mainly because the closed captions weren't 100% correct, and because the instructional videos were so blurry, it was nearly impossible to make out what I was reading. I will have to test this on other screens to be sure and will report back with updates.
+1. It got difficult to follow along with what the instructor was saying, mainly because the closed captions weren't 100% correct, and because the instructional videos were so blurry, it was nearly impossible to make out what I was reading. I will have to test this on other screens to be sure and will report back with updates. Nevermind; I see now in the settings menu at the bottom-right of the video embed that the quality can be adjusted. 
 2. 
