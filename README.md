@@ -90,6 +90,24 @@ Getting the same result:
 zsh: command not found: jest
 ```
 
+I found this in my search:
+https://stackoverflow.com/questions/50138532/command-not-found-jest
+
+"I ran into similar issue. I fixed it by installing jest globally.":
+
+```
+npm install -g jest
+```
+
+I also run:
+
+```
+npm fund
+```
+
+Success! I now see '29.7.0' as a result to 'jest --version'
+
+Side note; I forgot I had to do a 'git pull' before doing a 'git push' since I updated this readme file via the remote repository here on Github. Seems everything is up to date; including the updated Jest modules.
 
 
 #### Feedback on this module/section of the course:
