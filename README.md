@@ -59,6 +59,37 @@ npm init -y
 
 "The dash y flag automatically answers yes to all the questions that init command asks during installation."
 
+"Since I want to use the jest testing library, I'll need to install it locally, which means installing it for this project. So I run:"
+
+```
+npm install --save -dev jest
+```
+
+The above seemed to work, my terminal window showed the library being downloaded or loaded in. Message:
+
+```
+npm WARN config dev Please use --include=dev instead
+added 1 package, changed 61 packages, and audited 293 packages in 16s
+```
+
+I see a message that '31 packages are looking for funding run `npm fund` for details'. I run this:
+
+```
+npm fund
+```
+
+I try using:
+
+```
+jest --version
+```
+
+Getting the same result:
+
+```
+zsh: command not found: jest
+```
+
 
 
 #### Feedback on this module/section of the course:
