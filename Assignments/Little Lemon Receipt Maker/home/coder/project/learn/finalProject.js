@@ -20,7 +20,13 @@ const dishData = [
 const tax = 1.20;
 
 // Implement getPrices()
-function getPrices() {
+function getPrices(taxBoolean) {
+    for (let i = 0; i < dishData.length(); i++) {
+        let finalPrice;
+        if (taxBoolean = true) {
+            dishData(i) = (dishData(i) * tax);
+        }
+    } 
     
 }
 
