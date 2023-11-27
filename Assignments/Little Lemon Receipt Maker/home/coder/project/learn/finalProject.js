@@ -24,7 +24,10 @@ function getPrices(taxBoolean) {
     for (let i = 0; i < dishData.length(); i++) {
         let finalPrice;
         if (taxBoolean = true) {
-            dishData[i] = (dishData[i] * tax);
+            finalPrice = dishData[i] = (dishData[i] * tax);
+
+        } else if (taxBoolean = false) {
+            finalPrice = dishData[i];
         }
     } 
     
