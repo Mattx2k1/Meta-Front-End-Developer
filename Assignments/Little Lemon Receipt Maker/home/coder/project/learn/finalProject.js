@@ -32,6 +32,8 @@ function getPrices(taxBoolean) {
             console.log("You need to pass a boolean to the getPrices call!");
             console.log('return (to "jump out" of the further function execution)');
         }
+
+        console.log(`Dish: ${dishData[i]} Price: $${finalPrice}`);
     } 
     
 }
