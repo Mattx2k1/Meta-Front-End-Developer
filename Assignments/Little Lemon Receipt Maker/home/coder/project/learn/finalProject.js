@@ -50,7 +50,10 @@ function getDiscount(taxBoolean, guests) {
             discount = 10;
         }
         console.log(`Discount is $${(finalPrice + discount)}`);
-    }
+    } else console.log("The second argument must be a number between 0 and 30")
 }
 
 // Call getDiscount()
+
+getDiscount(true, 2)
+getDiscount(false, 10)
