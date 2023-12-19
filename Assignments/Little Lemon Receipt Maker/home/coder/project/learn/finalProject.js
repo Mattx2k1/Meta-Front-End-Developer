@@ -21,19 +21,19 @@ const tax = 1.20;
 
 // Implement getPrices()
 function getPrices(taxBoolean) {
-    for (let i = 0; i < dishData.length(); i++) {
+    for (let i = 0; i < dishData.length; i++) {
         let finalPrice;
-        if (taxBoolean = true) {
-            finalPrice = dishData[i] = (dishData[i] * tax);
+        if (taxBoolean == true) {
+            finalPrice = (dishData[i].price * tax);
 
-        } else if (taxBoolean = false) {
-            finalPrice = dishData[i];
+        } else if (taxBoolean == false) {
+            finalPrice = dishData[i].price;
         } else {
             console.log("You need to pass a boolean to the getPrices call!");
             console.log('return (to "jump out" of the further function execution)');
         }
 
-        console.log(`Dish: ${dishData[i]} Price: $${finalPrice}`);
+        console.log(`Dish: ${dishData[i].name} Price: $${finalPrice}`);
     } 
     
 }
@@ -49,11 +49,14 @@ function getDiscount(taxBoolean, guests) {
         } else if (guests >= 5) {
             discount = 10;
         }
-        console.log(`Discount is $${(finalPrice + discount)}`);
+        console.log(`Discount is $${(discount)}`);
     } else console.log("The second argument must be a number between 0 and 30")
 }
 
 // Call getDiscount()
 
-getDiscount(true, 2)
-getDiscount(false, 10)
+getDiscount(true, 2);
+getDiscount(false, 10);
+getDiscount();
+getDiscount(true, 100);
+getDiscount(false, 100);
