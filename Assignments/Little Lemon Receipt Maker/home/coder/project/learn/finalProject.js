@@ -49,7 +49,7 @@ function getDiscount(taxBoolean, guests) {
         } else if (guests >= 5) {
             discount = 10;
         }
-        console.log(`Discount is $${(finalPrice + discount)});
+        console.log(`Discount is $${(finalPrice + discount)}`);
     }
 }
 
