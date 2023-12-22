@@ -24,7 +24,7 @@ function getPrices(taxBoolean) {
     for (let i = 0; i < dishData.length; i++) {
         let finalPrice;
         if (taxBoolean === true) {
-            finalPrice = (dishData[i].price * tax);
+            finalPrice = ((dishData[i].price) * tax);
 
         } else if (taxBoolean === false) {
             finalPrice = dishData[i].price;
@@ -59,3 +59,4 @@ getDiscount(false, 10);
 getDiscount();
 getDiscount(true, 100);
 getDiscount(false, 100);
+getDiscount('a', 'b');
