@@ -33,7 +33,7 @@ function getPrices(taxBoolean) {
             return; 
             
         }
-        console.log(`Dish: ${dishData[i].name} Price: $'${finalPrice}'`);
+        console.log(`Dish: ${dishData[i].name} Price: $${finalPrice}`);
     } 
     
 }
