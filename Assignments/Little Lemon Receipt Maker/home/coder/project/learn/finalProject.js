@@ -40,7 +40,7 @@ function getPrices(taxBoolean) {
 
 // Implement getDiscount()
 function getDiscount(taxBoolean, guests) {
-    getPrices(taxBoolean)
+    getPrices(taxBoolean);
 
     if (typeof guests == "number" && guests > 0 && guests < 30) {
         let discount = 0
