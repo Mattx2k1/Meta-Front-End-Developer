@@ -57,21 +57,3 @@ function getDiscount(taxBoolean, guests) {
 
 getDiscount(true, 2);
 getDiscount(false, 10);
-getDiscount(true, 0);
-getDiscount(false, 0);
-getDiscount(true, 1);
-getDiscount(false, 1);
-getDiscount(true, 2);
-getDiscount(false, 2);
-getDiscount(true, 3);
-getDiscount(false, 3);
-getDiscount(true, 4);
-getDiscount(true, 5);
-getDiscount(true, 10);
-getDiscount(false, 10);
-getDiscount(true, 15);
-getDiscount(true, 20);
-getDiscount(true, 30);
-getDiscount(true, 100);
-getDiscount(false, 100);
-getDiscount('a', 'b');
