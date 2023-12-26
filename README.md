@@ -10,13 +10,13 @@ Documenting my journey and progress of the Meta Front-End Developer Cert through
 
 ## Current stage
 
-### Course 1 - Introduction to Front-End Development: 
+### Course 2 - Programming with JavaScript
 
-Complete! - https://coursera.org/share/749b19d28c0eea372d32a8408f179e07 
+Complete! - https://coursera.org/share/63c15f3b5306ec64b756e597bc0e2d58 
 
-![Screen Shot 2023-02-19 at 1 31 58 PM](https://user-images.githubusercontent.com/44537080/219967903-23eb67dc-6a09-422b-b005-750e9fe436b7.png)
+![Coursera WB2D4WHMLFF9](https://github.com/Mattx2k1/Meta-Front-End-Developer/assets/44537080/406739af-a918-4639-8cf3-1bb0e0199ee3)
 
-### Course 2 - Programming with Javascript
+Course 2 - Programming with Javascript (notes; will do this in another section going forward to avoid clutter)
 
 #### Week 4 - Writing tests with Jest
 
@@ -197,3 +197,12 @@ And success, after installing the Jest framework local to the project, using the
 #### Feedback on this module/section of the course:
 1. It got difficult to follow along with what the instructor was saying, mainly because the closed captions weren't 100% correct, and because the instructional videos were so blurry, it was nearly impossible to make out what I was reading. I will have to test this on other screens to be sure and will report back with updates. Nevermind; I see now in the settings menu at the bottom-right of the video embed that the quality can be adjusted. 
 2. I got caught up for a while just figuring out how to get the expected output from the console and installing the prject dependencies. It was a good learning experience to work through and troubleshoot why it all wasn't working. I complicated this by my use of git and github within the project, but I think it helped with my learning overall.
+
+
+### Course 1 - Introduction to Front-End Development: 
+
+Complete! - https://coursera.org/share/749b19d28c0eea372d32a8408f179e07 
+
+![Screen Shot 2023-02-19 at 1 31 58 PM](https://user-images.githubusercontent.com/44537080/219967903-23eb67dc-6a09-422b-b005-750e9fe436b7.png)
+
+
