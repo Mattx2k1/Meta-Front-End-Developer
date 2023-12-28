@@ -12,7 +12,7 @@ Documenting my journey and progress of the Meta Front-End Developer Cert through
 
 ### Course 2 - Programming with JavaScript
 
-Complete! - https://coursera.org/share/63c15f3b5306ec64b756e597bc0e2d58 
+Complete! - https://coursera.org/share/14292bf42ddcb6b061deff01eccdf0a5
 
 ![Coursera WB2D4WHMLFF9](https://github.com/Mattx2k1/Meta-Front-End-Developer/assets/44537080/406739af-a918-4639-8cf3-1bb0e0199ee3)
 
