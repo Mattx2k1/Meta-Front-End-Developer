@@ -2,7 +2,7 @@
 
 ## Instructions
 
-### Error report below
+### (Error report below instructions)
 
 Step 1: Open the Terminal and authenticate using gh (Github CLI):
 
