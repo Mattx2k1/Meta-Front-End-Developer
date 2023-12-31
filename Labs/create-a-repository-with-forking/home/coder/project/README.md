@@ -50,13 +50,13 @@ Step 13: On the compare page click "compare across forks"
 
 Step 14: Select the main branch as "base"
 
-## Error report
-
-https://github.com/Mattx2k1/Meta-Front-End-Developer/blob/main/Labs/create-a-repository-with-forking/home/coder/project/errorsEncountered.md
-Step 15: Select your fork and the committed branch (my-branch) as "fork"
-
 Step 16: Give your pull request a title and description.
 
 Step 17: Click "Create Pull Request" button to initiate your pull request.
 
 Step 18: Once your pull request is complete copy the pull request ID.
+
+## Error report
+
+https://github.com/Mattx2k1/Meta-Front-End-Developer/blob/main/Labs/create-a-repository-with-forking/home/coder/project/errorsEncountered.md
+Step 15: Select your fork and the committed branch (my-branch) as "fork"
